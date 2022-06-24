@@ -32,6 +32,28 @@ const UsersSchema = new mongoose.Schema({
     
  }, {timestamps:true})
 
+ UsersSchema.virtual('confirmPassword')
+  .get( () => this._confirmPassword )
+  .set( value => this._confirmPassword = value );
+
+
+  UsersSchema.pre('validate', function(next) {
+    if (this.password !== this.confirmPassword) {
+      this.invalidate('confirmPassword', 'Password must match confirm password');
+    }
+    next();
+  });
+
+  const bcrypt = require('bcrypt');
+// this should go after 
+UsersSchema.pre('save', function(next) {
+  bcrypt.hash(this.password, 10)
+    .then(hash => {
+      this.password = hash;
+      next();
+    });
+});
+
 
  UsersSchema.methods.generateAuthToken = function() {
         const token = jwt.sign({_id: this._id}, process.env.JWTPRIVATEKEY,{expiresIn: "7d"})
