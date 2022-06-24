@@ -1,0 +1,32 @@
+
+
+
+.nav-container {
+    background-color: white;
+    box-shadow: 2px 2px 2px gainsboro;
+    height: 80px;
+    position:fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 50px;
+    
+
+}
+
+.nav-button {
+    background-color:  #75C9C0!important;
+    margin: 3px;
+    font-weight:lighter !important;
+    padding: 10px !important;
+    border: none !important;
+    
+}
+
+.loguito{
+    font-weight: bold;
+}

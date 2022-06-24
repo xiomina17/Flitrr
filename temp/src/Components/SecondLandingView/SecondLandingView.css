@@ -1,0 +1,46 @@
+.sec-container {
+
+    margin-top: auto;
+    background: #75C9C0;
+    height: 100vh;
+    width: 100%;
+   
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+.second-card {
+    border-radius: 40px !important;
+    padding: 20px;
+    box-shadow: 2px 2px 2px  2px gainsboro;
+}
+
+.title-text {
+
+    padding-top: 70px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+
+.second-imgs {
+    margin-top: 30px;
+}
+.card-tittle1 {
+    margin-top: 40px !important;
+}
+
+.card-tittle2 {
+    margin-top: 25px !important;
+}
+
+.c-text {
+    font-weight: lighter;
+    color: grey;
+}
+

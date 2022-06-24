@@ -1,0 +1,49 @@
+
+.main-container {
+    margin-top: 80px;
+    background: white;
+    height: 550px;
+    height: 100vh;
+}
+
+.main-wrapper{
+    margin-top: 50px;
+    display:flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-bird {
+    margin-top: 30px ;
+    flex:1 1 50%;
+}
+
+.main-text{
+    margin-top: 130px;
+    text-align: left;
+    flex:1 1 50%;
+}
+
+.main-button {
+    background-color: #F8914C !important;
+    margin: 3px;
+    margin-top: 30px;
+    font-weight:lighter !important;
+    padding: 18px !important;
+    border: none !important;
+}
+
+.tittle-text {
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.p-text {
+
+    padding-top: 20px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: grey;
+}
