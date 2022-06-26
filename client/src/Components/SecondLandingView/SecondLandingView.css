@@ -1,30 +1,46 @@
 .sec-container {
-
-    margin-top: auto;
     background: #75C9C0;
-    height: 100vh;
-    width: 100%;
-   
 }
 
 .card-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 35px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
+
 
 .second-card {
-    border-radius: 40px !important;
+    width: 350px !important;
+    height: 530px;
+    border-radius: 20px !important;
     padding: 20px;
-    box-shadow: 2px 2px 2px  2px gainsboro;
+    box-shadow: 2px 2px 5px gray;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    transition: 1s;
+    margin-top: 50px;
+}
+.second-card:hover {
+    transform:scale(1.1);
+    z-index:2;
+}
+.s-text {
+    margin-top: 25px;
 }
 
+
+.s2-text {
+    margin-top: 25px;
+}
 .title-text {
 
     padding-top: 70px;
     font-weight: bolder;
-    font-size: 50px;
-    color: aliceblue;
+    font-size: 60px;
+    color: white;
 }
 
 
@@ -32,15 +48,31 @@
     margin-top: 30px;
 }
 .card-tittle1 {
-    margin-top: 40px !important;
+    margin-top: 35px !important;
+    color: white;
+    font-weight: bolder !important;
+    font-size: 18px !important;
 }
 
 .card-tittle2 {
-    margin-top: 25px !important;
+    
+    color: white;
+    font-weight: bolder !important;
+    font-size: 18px !important;
+
+}
+
+.card-tittle3 {
+    color: white;
+    font-weight: bolder !important;
+    font-size: 18px !important;
+
+
 }
 
 .c-text {
     font-weight: lighter;
-    color: grey;
+    color: white;
 }
+
 

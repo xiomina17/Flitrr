@@ -1,13 +1,14 @@
 
 .main-container {
-    margin-top: 80px;
+    
     background: white;
-    height: 550px;
-    height: 100vh;
+    min-height: 700px;
+    margin-top: 150px;
+    margin-bottom: 40px;
 }
 
 .main-wrapper{
-    margin-top: 50px;
+    margin-top: 20px;
     display:flex;
     padding-left: 100px;
     padding-right: 100px;
@@ -16,12 +17,12 @@
 }
 
 .main-bird {
-    margin-top: 30px ;
+    margin-top: 20px ;
     flex:1 1 50%;
 }
 
 .main-text{
-    margin-top: 130px;
+    margin-top: 110px;
     text-align: left;
     flex:1 1 50%;
 }
@@ -31,19 +32,27 @@
     margin: 3px;
     margin-top: 30px;
     font-weight:lighter !important;
-    padding: 18px !important;
+    padding: 20px !important;
     border: none !important;
+    box-shadow: inset 0 0 0 0 #75C9C0 !important;
+    transition: ease-out 0.3s !important;
+    outline: none;
+}
+
+.main-button:hover {
+    box-shadow: inset 120px 0 0 0 #75C9C0 !important;
 }
 
 .tittle-text {
     font-weight: bolder;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 .p-text {
 
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: lighter;
     color: grey;
 }
+

@@ -1,0 +1,7 @@
+.copyright {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    padding: 15px;
+    margin-right: 80px;
+}

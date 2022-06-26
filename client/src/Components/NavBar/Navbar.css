@@ -14,12 +14,12 @@
     padding-left: 100px;
     padding-right: 100px;
     font-size: 50px;
-    
+    z-index: 999;
 
 }
 
 .nav-button {
-    background-color:  #75C9C0!important;
+    background-color:   #F8914C ! important;
     margin: 3px;
     font-weight:lighter !important;
     padding: 10px !important;
