@@ -1,3 +1,5 @@
+ACCOUNT ALREADY SETUP JUST PLUG IN INFO
+
 /// https://developers.google.com/identity/sign-in/web/sign-in ///
 
 /// Load The Google Platform Library ///
