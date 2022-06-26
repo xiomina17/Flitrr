@@ -1,2 +1,4 @@
+NEEDS SETUP
+
 /// https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/authenticate-a-user-with-an-sso-token ///
 /// https://docs.microsoft.com/en-us/office/dev/add-ins/develop/register-sso-add-in-aad-v2 ///
