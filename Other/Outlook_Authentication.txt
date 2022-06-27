@@ -2,3 +2,7 @@ NEEDS SETUP
 
 /// https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/authenticate-a-user-with-an-sso-token ///
 /// https://docs.microsoft.com/en-us/office/dev/add-ins/develop/register-sso-add-in-aad-v2 ///
+/// https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-sign-user-overview?tabs=nodejs&source=docs ///
+/// https://docs.microsoft.com/en-us/azure/active-directory/develop/web-app-quickstart?pivots=devlang-nodejs-passport ///
+
+WE NEED AN ACTIVE AN AZURE ACCOUNT WITH AN ACTIVE SUBSCRIPTION
