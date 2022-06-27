@@ -1,4 +1,5 @@
 ACCOUNT ALREADY SETUP JUST PLUG IN INFO
+I SETUP USING MY ACCOUNT, WE NEED A SUPPORT ACCOUNT (EMAIL ADDRESS)
 
 /// https://developers.google.com/identity/sign-in/web/sign-in ///
 
