@@ -1,31 +1,48 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import jwt_decode from "jwt-decode";
 
 
 
 const SignUp = () => {
+
+	// Setting up variables.
+	const navigate = useNavigate();
+	const [user, setUser] = useState({});
+	const [error, setError] = useState("");
+	const [confirmPassword, setConfirmPassword] = useState("");
+	
+
+	//Do not pass CP to the back end.
 	const [data, setData] = useState({
 		fullName: "",
 		email: "",
         phoneNumber:"",
 		password: "",
 	});
-	const [error, setError] = useState("");
-	const navigate = useNavigate();
-
+	
+	// Storing the user.
 	const handleChange = ({ currentTarget: input }) => {
 		setData({ ...data, [input.name]: input.value });
 	};
 
+	// Submiting the form.
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+
+		if(data.password !== confirmPassword){
+			setError("Passwords do not match");
+			console.log(data.password);
+			console.log(confirmPassword);
+			return;
+		}
 		try {
 			const url = "http://localhost:8000/api/users";
 			const { data: res } = await axios.post(url, data);
-			navigate("/login");
+			navigate("/");
 			console.log(res.message);
 		} catch (error) {
 			if (
@@ -38,11 +55,36 @@ const SignUp = () => {
 		}
 	};
 
+	// Captcha 
 	function handleOnChange(value) {
 		console.log("Captcha value:", value);
 	  }
 	
+	// Gmail authenthication. 
+	  function handleCallbackResponse(response){
+			console.log( "Encoded JWT ID token" + response.credential);
+			var userObject = jwt_decode(response.credential);
+			console.log(userObject);
+			setUser(userObject);
+	  }
 
+	  useEffect(() => {
+		
+	  /*global google*/
+
+	  google.accounts.id.initialize({
+		client_id:"223704466325-2a0hlhdg7gaqeb0grpl36udrb75hq9pr.apps.googleusercontent.com",
+		callback: handleCallbackResponse
+
+	  })
+		google.accounts.id.renderButton(
+			document.getElementById("singInDiv"),
+			{theme: "outline", size:"large"}
+		)
+	  }, [])
+	
+	  //If we have no user: sign in button
+	  // if we have user: show the log out 
 	 
 
 	return (
@@ -58,7 +100,7 @@ const SignUp = () => {
 				</div>
 				<div className={styles.right}>
 					<form className={styles.form_container} onSubmit={handleSubmit}>
-						<h1>Create Account</h1>
+						<h1>Create an account</h1>
 						<input
 							type="text"
 							placeholder="Full Name"
@@ -95,16 +137,24 @@ const SignUp = () => {
 							required
 							className={styles.input}
 						/>
-						{/* <input
+
+						<input
 							type="password"
-							placeholder="confirmPassword"
+							placeholder="Confirm password"
 							name="confirmPassword"
-							onChange={handleChange}
-							value={data.password}
+							onChange={p => setConfirmPassword(p.currentTarget.value)}
+							value={confirmPassword}
 							required
 							className={styles.input}
-						/> */}
+						/>
 						{error && <div className={styles.error_msg}>{error}</div>}
+
+						or
+
+						<div id="singInDiv">
+						</div>
+						
+						
 						<ReCAPTCHA style={{marginTop:'15px'}}
 							sitekey="6LfN84sgAAAAACQ3yQIavTYVBV_zuXcmVKTuLaBQ"
 							onChange={handleOnChange}

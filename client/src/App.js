@@ -1,4 +1,5 @@
 import './App.css';
+
 import { Link, Routes, Route, Navigate} from 'react-router-dom';
 import SignUp from './Components/SignUp/SignUp';
 import Login from './Components/Login/Login';
@@ -17,14 +18,11 @@ function App() {
     <div className="App">
     
       <Routes>
-      {user && <Route path="/" exact element={<Main />} />}
+      {user && <Route path="/" exact element={<LandingPage />} />}
        <Route path="/signup" exact element={<SignUp/>}/>
        <Route path="/login" exact element={<Login />} />
-       <Route path="/" element={<Navigate replace to="/login" />} />
+       <Route path="/" element={<Navigate replace to="/Flitrr" />} />
        <Route path="/Flitrr" exact element={<LandingPage />} />
-
-    
-   
       </Routes>
     </div>
   );

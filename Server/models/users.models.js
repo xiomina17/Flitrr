@@ -32,17 +32,7 @@ const UsersSchema = new mongoose.Schema({
     
  }, {timestamps:true})
 
- UsersSchema.virtual('confirmPassword')
-  .get( () => this._confirmPassword )
-  .set( value => this._confirmPassword = value );
 
-
-  UsersSchema.pre('validate', function(next) {
-    if (this.password !== this.confirmPassword) {
-      this.invalidate('confirmPassword', 'Password must match confirm password');
-    }
-    next();
-  });
 
   const bcrypt = require('bcrypt');
 // this should go after 

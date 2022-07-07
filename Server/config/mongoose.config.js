@@ -5,7 +5,7 @@ const DB ='Flitrr_db'
 //2. Connect to the database,
 
 module.exports = (DB) => {
-    mongoose.connect('mongodb://localhost/' + DB, {
+    mongoose.connect('mongodb+srv://flitrr:Ninfadora2903!@cluster0.zc34c.mongodb.net/?retryWrites=true&w=majority', {
 useNewUrlParser: true,
 useUnifiedTopology: true
 })

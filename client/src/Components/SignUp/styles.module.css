@@ -8,7 +8,7 @@
 }
 
 .signup_form_container {
-	width: 900px;
+	width: 800px;
 	height: 600px;
 	display: flex;
 	border-radius: 10px;
@@ -52,7 +52,7 @@
 }
 
 .form_container h1 {
-	font-size: 40px;
+	font-size: 30px;
 	margin-top: 0;
 }
 
@@ -64,7 +64,7 @@
 	border-radius: 10px;
 	background-color: #edf5f3;
 	margin: 5px 0;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .error_msg {

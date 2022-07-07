@@ -3,7 +3,7 @@ import './landingPage.css'
 import Navbar from '../NavBar/NavBar'
 import MainLandingView from '../MainLandingView/MainLandingView';
 import SecondLandingView from '../SecondLandingView/SecondLandingView';
-import Wrapper from '../Wrapper/Wrapper';
+import Pricing from '../Princing/Pricing';
 
 
 const LandingPage = () => {
@@ -12,6 +12,7 @@ const LandingPage = () => {
       <Navbar/>
       <MainLandingView/>
       <SecondLandingView/>
+      <Pricing/>
     
     </div>
   )
