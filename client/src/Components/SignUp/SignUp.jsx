@@ -1,9 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
-import ReCAPTCHA from "react-google-recaptcha";
 import jwt_decode from "jwt-decode";
+import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
+
 
 
 
@@ -40,7 +41,7 @@ const SignUp = () => {
 			return;
 		}
 		try {
-			const url = "http://localhost:8000/api/users";
+			const url = "https://flitrr.herokuapp.com/api/users";
 			const { data: res } = await axios.post(url, data);
 			navigate("/");
 			console.log(res.message);
@@ -56,7 +57,8 @@ const SignUp = () => {
 	};
 
 	// Captcha 
-	function handleOnChange(value) {
+	//Captcha 
+	function handleCaptcha(value) {
 		console.log("Captcha value:", value);
 	  }
 	
@@ -68,23 +70,6 @@ const SignUp = () => {
 			setUser(userObject);
 	  }
 
-	  useEffect(() => {
-		
-	  /*global google*/
-
-	  google.accounts.id.initialize({
-		client_id:"223704466325-2a0hlhdg7gaqeb0grpl36udrb75hq9pr.apps.googleusercontent.com",
-		callback: handleCallbackResponse
-
-	  })
-		google.accounts.id.renderButton(
-			document.getElementById("singInDiv"),
-			{theme: "outline", size:"large"}
-		)
-	  }, [])
-	
-	  //If we have no user: sign in button
-	  // if we have user: show the log out 
 	 
 
 	return (
@@ -149,16 +134,14 @@ const SignUp = () => {
 						/>
 						{error && <div className={styles.error_msg}>{error}</div>}
 
-						or
 
 						<div id="singInDiv">
 						</div>
 						
-						
-						<ReCAPTCHA style={{marginTop:'15px'}}
-							sitekey="6LfN84sgAAAAACQ3yQIavTYVBV_zuXcmVKTuLaBQ"
-							onChange={handleOnChange}
-						/>,
+						<GoogleReCaptchaProvider reCaptchaKey="6LdtMt0gAAAAAH0Z8RZkq31x-ZAA5GkNl2Ag7qps">
+							<GoogleReCaptcha onVerify={handleCaptcha}></GoogleReCaptcha>
+						</GoogleReCaptchaProvider>
+
 						<button type="submit" className={styles.green_btn}>
 							Sing Up
 						</button>

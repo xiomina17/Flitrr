@@ -19,7 +19,7 @@ const MainLandingView = () => {
         </div>
 
         <div className='main-bird'>
-            <img  src="Assets/bird.png" alt="bird" width="600px" />
+            <img id="main-bird-img" src="Assets/bird.png" alt="bird" width="600px" />
         </div>
 
         </div>

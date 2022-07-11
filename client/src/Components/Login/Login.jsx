@@ -2,8 +2,50 @@ import { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import ReCAPTCHA from "react-google-recaptcha";
- 
+import {GoogleLogin} from 'react-google-login';
+import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
+
+
+
+const clientId = '716114519644-a97rcavg05ls553aaoul6tgdp4jrvpia.apps.googleusercontent.com';
+const onSuccess =(res)=>{
+	// TODO set token from response into localStorage
+	localStorage.setItem("token", res.data);
+	window.location = "/";
+	console.log('Success');
+	refreshTokenSetup(res);
+};
+
+const onFailure =(res)=>{
+	console.log('Failure');
+	console.log(res);
+};
+
+
+//Refresh Token (nedded for google login)
+
+export const refreshTokenSetup = (res) => {
+	// Timing to renew access token
+	let refreshTiming = (res.tokenObj.expires_in || 3600 - 5 * 60) * 1000;
+  
+	const refreshToken = async () => {
+	  const newAuthRes = await res.reloadAuthResponse();
+	  refreshTiming = (newAuthRes.expires_in || 3600 - 5 * 60) * 1000;
+	  console.log('newAuthRes:', newAuthRes);
+	  // saveUserToken(newAuthRes.access_token);  <-- save new token
+	  localStorage.setItem('authToken', newAuthRes.id_token);
+  
+	  // Setup the other timer after the first one
+	  setTimeout(refreshToken, refreshTiming);
+	};
+  
+	// Setup first refresh timer
+	setTimeout(refreshToken, refreshTiming);
+  };
+
+
+
+
 
 const Login = () => {
 	const [data, setData] = useState({ email: "", password: "" });
@@ -16,7 +58,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:8000/api/auth";
+			const url = "https://flitrr.herokuapp.com/api/auth";
 			const { data: res } = await axios.post(url, data);
 			localStorage.setItem("token", res.data);
 			window.location = "/";
@@ -31,10 +73,22 @@ const Login = () => {
 		}
 	};
 
-	function handleOnChange(value) {
-		console.log("Captcha value:", value);
-	  }
 
+	//Captcha 
+	const handleCaptcha = (value) => {
+		// const body = {
+		// 	secret:"6LdtMt0gAAAAAH0Z8RZkq31x-ZAA5GkNl2Ag7qps",
+		// 	response:value
+		// }
+		
+		// axios.post('https://www.google.com/recaptcha/api/siteverify', body)
+		// .then((res) => {
+		// 	console.log(res);
+		// })
+		// .catch(function (error) {
+		// 	console.log(error);
+		// });
+	}
 
 	return (
 		<div className={styles.login_container}>
@@ -61,13 +115,31 @@ const Login = () => {
 							className={styles.input}
 						/>
 						{error && <div className={styles.error_msg}>{error}</div>}
-						<ReCAPTCHA style={{marginTop:'15px'}}
-							sitekey="6LfN84sgAAAAACQ3yQIavTYVBV_zuXcmVKTuLaBQ"
-							onChange={handleOnChange}
-						/>,
+
+						
+						<GoogleReCaptchaProvider reCaptchaKey="6LdtMt0gAAAAAH0Z8RZkq31x-ZAA5GkNl2Ag7qps">
+							<GoogleReCaptcha onVerify={handleCaptcha}></GoogleReCaptcha>
+						</GoogleReCaptchaProvider>
+
+
+
 						<button type="submit" className={styles.green_btn}>
 							Sing In
 						</button>
+					
+						<div>
+							<GoogleLogin
+							clientId= {clientId}
+							buttonText="Sign in with Google"
+							onSuccess={onSuccess}
+							onFailure={onFailure}
+							cookiePolicy={'single_host_origin'}
+							style={{marginTop:'100px'}}
+							isSignedIn={true}
+							/>
+						</div>
+
+
 					</form>
 				</div>
 				<div className={styles.right}>

@@ -1,19 +1,22 @@
 
 .main-container {
-    
-    background: white;
-    min-height: 700px;
-    margin-top: 150px;
-    margin-bottom: 40px;
+    background-color: whitesmoke;
+    background: url("/public/Assets/background3.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+   
 }
 
 .main-wrapper{
-    margin-top: 20px;
+
+    
+    
     display:flex;
     padding-left: 100px;
     padding-right: 100px;
     justify-content: space-between;
     flex-wrap: wrap;
+   
 }
 
 .main-bird {
@@ -56,3 +59,8 @@
     color: grey;
 }
 
+@media screen and (max-width: 700px) {
+    #main-bird-img {
+      width: 100%;
+    }
+}

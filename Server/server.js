@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const cors = require('cors');
 const DB ='Flitrr_db'
 const userRoutes = require('./routes/users.routes');

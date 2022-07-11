@@ -1,0 +1,30 @@
+.body-wrapper{
+
+	display: flex;
+	flex-direction:row;
+	background-color: white;
+	height: 100vh;
+}
+
+.column-nav {
+
+	display: flex;
+	gap:20px;
+	flex-direction: column;
+	align-items: flex-start;
+	flex:1;
+	padding:30px;
+	background-color: #2B876D;
+	color: white;
+	
+	
+}
+.header-nav {
+	border-bottom: 3px solid gray;
+	
+}
+
+.board {
+	flex:5
+}
+

@@ -1,5 +1,6 @@
 .sec-container {
-    background: #75C9C0;
+    background: url("/public/Assets/background4.png") no-repeat center;
+    background-size: cover;
 }
 
 .card-wrapper {
@@ -19,7 +20,7 @@
     border-radius: 20px !important;
     padding: 20px;
     box-shadow: 2px 2px 5px gray;
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: white !important;
     transition: 1s;
     margin-top: 50px;
 }
@@ -40,7 +41,7 @@
     padding-top: 70px;
     font-weight: bolder;
     font-size: 60px;
-    color: white;
+    color: black;
 }
 
 
@@ -49,21 +50,21 @@
 }
 .card-tittle1 {
     margin-top: 35px !important;
-    color: white;
+    color: grey;
     font-weight: bolder !important;
     font-size: 18px !important;
 }
 
 .card-tittle2 {
     
-    color: white;
+    color: grey;
     font-weight: bolder !important;
     font-size: 18px !important;
 
 }
 
 .card-tittle3 {
-    color: white;
+    color: grey;
     font-weight: bolder !important;
     font-size: 18px !important;
 
@@ -72,7 +73,7 @@
 
 .c-text {
     font-weight: lighter;
-    color: white;
+    color: grey;
 }
 
 
