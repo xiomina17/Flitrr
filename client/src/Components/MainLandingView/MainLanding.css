@@ -32,7 +32,7 @@
 
 .main-button {
     background-color: #F8914C !important;
-    margin: 3px;
+    margin: 3px!important;
     margin-top: 30px;
     font-weight:lighter !important;
     padding: 20px !important;
@@ -43,7 +43,7 @@
 }
 
 .main-button:hover {
-    box-shadow: inset 120px 0 0 0 #75C9C0 !important;
+    box-shadow: inset 150px 0 0 0 #75C9C0 !important;
 }
 
 .tittle-text {
@@ -59,7 +59,7 @@
     color: grey;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 12000px) {
     #main-bird-img {
       width: 100%;
     }

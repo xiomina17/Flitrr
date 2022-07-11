@@ -16,6 +16,7 @@ const SignUp = () => {
 	const [error, setError] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
 	
+	
 
 	//Do not pass CP to the back end.
 	const [data, setData] = useState({
@@ -33,6 +34,7 @@ const SignUp = () => {
 	// Submiting the form.
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		navigate('/SignupSuccessful');
 
 		if(data.password !== confirmPassword){
 			setError("Passwords do not match");

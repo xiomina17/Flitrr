@@ -1,5 +1,8 @@
 .third-container{
-    background-color:rgb(248,145,76,0.5)
+    background: url("/public/Assets/background8.png") no-repeat center;
+    background-size: cover;
+    background-color: whitesmoke;
+    
     
 }
 

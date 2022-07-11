@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './Navbar.css'
 import {Button, Container, Nav, Navbar as BNavbar} from 'react-bootstrap';
 
