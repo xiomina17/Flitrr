@@ -14,6 +14,7 @@ const Navbar = () => {
       <BNavbar.Collapse id="responsive-navbar-nav">
         <Nav className='me-auto'></Nav>
         <Nav>
+          <Link to="/product"><p>Product</p></Link>
           <Link to="/signup"><Button size="lg" className='nav-button'>Get Started</Button></Link>
           <Link to="/login"><Button size="lg" className='nav-button'>Log in</Button></Link>
         </Nav>

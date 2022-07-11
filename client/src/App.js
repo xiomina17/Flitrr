@@ -6,7 +6,7 @@ import Dashboard from './Components/Dashboard/Dashboard';
 import LandingPage from './Components/LandingPage/LandingPage';
 import SuccessfulSignUp from './Components/SuccessfulSignUp/SuccessfulSignUp';
 
-
+import Product from './Pages/Product/Product'
 
 
 
@@ -19,6 +19,7 @@ function App() {
     
       <Routes>
       {user && <Route path="/" exact element={<LandingPage />} />}
+        <Route path="/product" exact element={<Product/>} />
        <Route path="/signup" exact element={<SignUp/>}/>
        <Route path="/login" exact element={<Login />} />
        <Route path="/" element={<Navigate replace to="/Flitrr" />} />

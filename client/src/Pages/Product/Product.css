@@ -1,0 +1,21 @@
+#product-page {
+    padding: 40px;
+    text-align: left;
+}
+
+#product-content p {
+    margin-top: 40px;
+    color: grey;
+}
+
+#opening {
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media screen and (min-width: 992px) {
+    #product-page {
+        width: 800px;
+        margin: 0 auto;
+    }
+}
