@@ -15,7 +15,11 @@ const MainLandingView = () => {
         <div className='main-text'>
         <h1 className='tittle-text'>Human AI processing for faster product improvement</h1>
         <h3 className='p-text'>We work with all of your customer service data.</h3>
-        <Button size='lg' className='main-button'>Try Now!</Button>
+        <Button size='lg' className='main-button'>
+          <a href='https://calendly.com/jacob_flitrr/scheduled'>
+          Free Trial
+          </a>
+        </Button>
         </div>
 
         <div className='main-bird'>
