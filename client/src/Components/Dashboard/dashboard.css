@@ -28,3 +28,33 @@
 	flex:5
 }
 
+.nav-container2{
+	background-color: white;
+    box-shadow: 2px 2px 2px gainsboro;
+    position:fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    font-size: 40px;
+    z-index: 999;
+}
+
+.logo2{
+	font-weight: bold;
+	font-size: 30px;
+}
+.navbar-nav{
+	align-items: center;
+	width:400px;
+	justify-content: space-between;
+	margin-top: auto;
+	
+}
+
+.tittle2{
+	font-weight: lighter;
+	font-size: 30px;;
+}
+
