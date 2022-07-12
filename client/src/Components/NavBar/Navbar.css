@@ -12,6 +12,12 @@
     color: #F8914C;
 }
 
+.title {
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
 
 .nav-container {
     background-color: white;
@@ -45,5 +51,9 @@
 @media screen and (min-width: 992px) {
     .item a {
         font-size: 0.35em;
+    }
+
+    .title {
+        font-size: 17px;
     }
 }

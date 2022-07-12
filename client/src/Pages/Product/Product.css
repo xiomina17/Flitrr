@@ -1,11 +1,16 @@
 #product-page {
     padding: 40px;
     text-align: left;
+    
+    color:white;
+}  
+
+#product-bckg {
+    background-image: url('./star-pattern.svg'), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(77,35,134,1) 0%, rgba(152,57,176,1) 100%);
 }
 
 #product-content p {
     margin-top: 40px;
-    color: grey;
 }
 
 #opening {
@@ -15,7 +20,7 @@
 
 @media screen and (min-width: 992px) {
     #product-page {
-        width: 800px;
+        width: 900px;
         margin: 0 auto;
     }
 }
