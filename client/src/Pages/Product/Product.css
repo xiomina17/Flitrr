@@ -6,15 +6,20 @@
 }  
 
 #product-bckg {
-    background-image: url('./star-pattern.svg'), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(77,35,134,1) 0%, rgba(152,57,176,1) 100%);
+    background-image: url('./star-pattern.svg'), linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(77,35,134,1) 0%, rgb(57, 79, 176) 100%);
 }
 
 #product-content p {
     margin-top: 40px;
 }
 
-#opening {
+#heading {
     font-weight: bold;
+    font-style: italic;
+}
+
+#subheading {
+    padding-top: 10px;
     font-style: italic;
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './landingPage.css'
 import Navbar from '../NavBar/NavBar'
 import MainLandingView from '../MainLandingView/MainLandingView';
@@ -9,6 +9,13 @@ import Footer from '../Footer/Footer';
 
 
 const LandingPage = () => {
+
+  useEffect(() => {
+    if (window.location.href.includes('#pricing')) {
+      document.getElementById('pricing').scrollIntoView();
+    }
+  }, [])
+
   return (
     <div>
       <Navbar/>

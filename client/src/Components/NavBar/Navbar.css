@@ -44,8 +44,10 @@
     
 }
 
-.logo{
+.logo a {
     font-weight: bold;
+    color: black !important;
+    text-decoration: none !important;
 }
 
 @media screen and (min-width: 992px) {

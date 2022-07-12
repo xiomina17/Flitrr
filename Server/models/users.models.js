@@ -10,14 +10,23 @@ const UsersSchema = new mongoose.Schema({
         required:[true, "Full name is required"]
     },
 
+    googleId: {
+        type: String,
+        required: false,
+        unique: true
+    },
+
     email:{
-        type:String,
-        required:[true, "Email is required"]
+        type: String,
+        required: [true, "Email is required"],
+        unique: true,
+        // make sure email is matches regex pattern for email
+        match: [/.+@.+\..+/, 'Must match an email address!']
     },
 
     phoneNumber:{
         type:Number,
-        required:[true, "Email is required"]
+        required:[true, "Phone number is required"]
     },
 
     companyName:{
