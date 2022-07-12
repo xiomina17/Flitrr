@@ -1,4 +1,5 @@
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import {Button, Container, Nav, Navbar as BNavbar, NavDropdown, Form} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
 import './dashboard.css'
 
@@ -11,17 +12,84 @@ const Main = () => {
 	return (
 		<>
 		
-		<Navbar bg="light" variant="light">
-		<Container>
-		<Navbar.Brand href="">Flitrr</Navbar.Brand>
-		<Nav className="me-auto">
-		<Nav.Link href="">Your work</Nav.Link>
-		<Nav.Link href="">Projects</Nav.Link>
-		<Nav.Link href="">People</Nav.Link>
-		<Nav.Link href="">Create</Nav.Link>
+		<BNavbar collapseOnSelect expand="lg" className='nav-container2'>
+      <Container>
+      <div className='logo2'>Flitrr</div>
+      <BNavbar.Toggle aria-controls="responsive-navbar-nav" />
+        <BNavbar.Collapse id="responsive-navbar-nav">
+          <Nav className='me-auto' style={{paddingLeft: '16px'}}>
+            <NavDropdown className="item" title="Your work">
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Assigned to me</p>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Recent</p>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/product">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Boards</p>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown className="item" title="Projects">
+              <NavDropdown.Item href="/product">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Recent</p>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>View all projects</p>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Create project</p>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown className="item" title="Filters">
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>View all filters</p>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Advance issue search</p>
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown className="item" title="Dashboards">
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>View all dashboards</p>
+              </NavDropdown.Item>
+              <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Create dashboards</p>
+              </NavDropdown.Item>
+            </NavDropdown>
+			<NavDropdown className="item" title="People">
+			<NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Invite Teanmates</p>
+              </NavDropdown.Item>
+			  <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Flitrr - Development</p>
+              </NavDropdown.Item>
+			  <NavDropdown.Item href="">
+                <p className="title2" style={{fontSize:"15px", fontWeight:"lighter"}}>Start a team</p>
+              </NavDropdown.Item>
+				</NavDropdown>
+				<Button>Create</Button>
+          </Nav>
+
+		<Nav>
+		  <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+          </Form>
+
+		  <Icon.BellFill width="20px" height="20px"></Icon.BellFill>
+		  <Icon.QuestionCircleFill width="20px" height="20px"></Icon.QuestionCircleFill>
+		  <Icon.GearFill width="20px" height="20px"></Icon.GearFill>
+		  <Icon.Circle></Icon.Circle>
+
 		</Nav>
-		</Container>
-		</Navbar>
+
+        </BNavbar.Collapse>
+      </Container>
+    </BNavbar>
 
 		<div className='body-wrapper'>
 			<div className='column-nav'>
