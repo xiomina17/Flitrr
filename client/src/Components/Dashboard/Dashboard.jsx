@@ -15,7 +15,7 @@ const Main = () => {
 		<BNavbar collapseOnSelect expand="lg" className='nav-container2'>
       <Container>
       <div className='logo2'>Flitrr</div>
-      <BNavbar.Toggle aria-controls="responsive-navbar-nav" />
+      <BNavbar.Toggle aria-controls="responsive-navbar-nav" class="dash-nav"/>
         <BNavbar.Collapse id="responsive-navbar-nav">
           <Nav className='me-auto' style={{paddingLeft: '16px'}}>
             <NavDropdown className="item" title="Your work">

@@ -45,12 +45,12 @@
 	font-weight: bold;
 	font-size: 30px;
 }
-.navbar-nav{
+
+.dash-nav {
 	align-items: center;
 	width:400px;
 	justify-content: space-between;
 	margin-top: auto;
-	
 }
 
 .tittle2{
