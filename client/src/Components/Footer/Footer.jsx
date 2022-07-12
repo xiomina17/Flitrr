@@ -83,6 +83,30 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
+            <Container>
+                <Row>
+                    <p>Contact Us</p>
+                    <Col>
+                        <p>Address</p>
+                        <ul>
+                            <li>
+                                497 Stockbridge Avenue <br/>
+                                Atherton, CA 94027
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col>
+                        <p>Email</p>
+                        <ul>
+                            <li>
+                                <a href="mailto:help@flitrr.com">
+                                    help@flitrr.com
+                                </a>
+                            </li>
+                        </ul>
+                    </Col>
+                </Row>
+            </Container>
             <p style={{marginTop: '20px', textAlign: 'center'}}>
                 © 2022 FlITRR ALL RIGHTS RESERVED
             </p>
