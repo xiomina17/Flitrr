@@ -5,6 +5,7 @@ import MainLandingView from '../MainLandingView/MainLandingView';
 import SecondLandingView from '../SecondLandingView/SecondLandingView';
 import Pricing from '../Princing/Pricing';
 import DemoComponent from '../DemoComponent/DemoComponent';
+import Footer from '../Footer/Footer';
 
 
 const LandingPage = () => {
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <SecondLandingView/>
       <Pricing/>
       <DemoComponent/>
+      <Footer/>
     </div>
   )
 }
