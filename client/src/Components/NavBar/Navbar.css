@@ -44,8 +44,10 @@
     
 }
 
-.loguito{
+.loguito {
     font-weight: bold;
+    text-decoration: none;
+    color: black !important;
 }
 
 @media screen and (min-width: 992px) {

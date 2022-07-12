@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 import { Container, Row, Col } from 'react-bootstrap'
 
 const Footer = () => {
+
+    // conditionally check if the user is on the landing page for Flitrr
+    const [landingPage, isLandingPage] = useState(true)
+   
+    useEffect(() => {
+        if (window.location.href.includes('/Flitrr')) {
+            isLandingPage(true)
+        } else {
+            isLandingPage(false)
+        }
+    }, [])
+
     return (
         <footer>
             <Container id="container">
@@ -11,9 +24,23 @@ const Footer = () => {
                     <Col>
                         <p>Explore</p>
                         <ul>
-                            <li>Product Overview</li>
+                            <li>
+                                <Link to='/product'>
+                                    Product Overview
+                                </Link>
+                            </li>
                             <li>Integrations</li>
-                            <li>Pricing</li>
+                            <li>
+                                {!landingPage ? (
+                                    <Link to='/Flitrr#pricing'>
+                                        Pricing
+                                    </Link>
+                                ) : (
+                                    <a href='#pricing'>
+                                        Pricing
+                                    </a>
+                                )}
+                            </li>
                             <li>CX</li>
                             <li>Compare</li>
                             <li>Live Demo</li>

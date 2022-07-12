@@ -1,12 +1,12 @@
-import { useState} from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 import jwt_decode from "jwt-decode";
+import { GoogleLogin } from 'react-google-login'
 import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
-
-
+const clientId = '716114519644-a97rcavg05ls553aaoul6tgdp4jrvpia.apps.googleusercontent.com';
 
 const SignUp = () => {
 
@@ -15,7 +15,14 @@ const SignUp = () => {
 	const [user, setUser] = useState({});
 	const [error, setError] = useState("");
 	const [confirmPassword, setConfirmPassword] = useState("");
-	
+
+	const handleSuccess = (res) => {
+		console.log(res)
+	} 
+
+	const handleFailure = (err) => {
+		console.log(err)
+	}
 	
 
 	//Do not pass CP to the back end.
@@ -147,6 +154,13 @@ const SignUp = () => {
 						<button type="submit" className={styles.green_btn}>
 							Sign Up
 						</button>
+						<GoogleLogin
+							clientId={clientId}
+							buttonText="Sign Up with Google" 
+							onSuccess={handleSuccess}
+							onFailure={handleFailure}
+							isSignedIn={true}
+						/>
 					</form>
 				</div>
 			</div>

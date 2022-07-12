@@ -5,8 +5,6 @@ import styles from "./styles.module.css";
 import {GoogleLogin} from 'react-google-login';
 import { GoogleReCaptchaProvider, GoogleReCaptcha } from 'react-google-recaptcha-v3';
 
-
-
 const clientId = '716114519644-a97rcavg05ls553aaoul6tgdp4jrvpia.apps.googleusercontent.com';
 const onSuccess =(res)=>{
 	// TODO set token from response into localStorage

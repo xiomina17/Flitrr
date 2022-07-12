@@ -4,7 +4,7 @@ import * as Icon from 'react-bootstrap-icons';
 
 const Pricing = () => {
   return (
-    <div className='third-container'>
+    <div className='third-container' id="pricing">
         <h1 className='tittle'>Pricing and Plans</h1>
         
         <div className='pricing-wrapper'>
