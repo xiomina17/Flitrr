@@ -2,6 +2,7 @@ import {Button, Container, Nav, Navbar as BNavbar, NavDropdown, Form} from 'reac
 import {Link} from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
 import './dashboard.css'
+import Board from '../Board/Board';
 
 const Main = () => {
 	const handleLogout = () => {
@@ -70,7 +71,7 @@ const Main = () => {
 				<Button>Create</Button>
           </Nav>
 
-		<Nav>
+		<Nav className='navbar-nav2'>
 		  <Form className="d-flex">
             <Form.Control
               type="search"
@@ -99,29 +100,20 @@ const Main = () => {
 					<p>Development</p>
 				</div>
 	
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Summary</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>List</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Board</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Calendar</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Timeline</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Forms</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Pages</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Issues</span>
-				<span><Icon.CaretRightFill style={{ color: 'white' }}/>Reports</span>
-
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Summary</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> List</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Board</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Calendar</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Timeline</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Forms</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Pages</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Issues</span>
+				<span><Icon.CaretRightFill style={{ color: 'white' }}/> Reports</span>
 			</div>
 
-
-
+			
 			<div className='board'>
-
-			<h1>BOARD</h1>
-
-
-
-
-
-
+			<Board/>
 			</div>
 
 		</div>
