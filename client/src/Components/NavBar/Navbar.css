@@ -1,4 +1,16 @@
+.item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 0.6em;
 
+    height: auto;   
+    padding: 7px;
+}
+
+.item:hover {
+    color: #F8914C;
+}
 
 
 .nav-container {
@@ -28,4 +40,10 @@
 
 .loguito{
     font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+    .item a {
+        font-size: 0.35em;
+    }
 }
