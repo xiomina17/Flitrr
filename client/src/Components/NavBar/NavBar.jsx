@@ -9,7 +9,7 @@ const Navbar = () => {
     
     <BNavbar collapseOnSelect expand="lg" className='nav-container'>
       <Container>
-      <div className='logo'><Link to="/dashboard">Flitrr</Link></div>
+      <div className='logo'><Link to="/Flitrr">Flitrr</Link></div>
       <BNavbar.Toggle aria-controls="responsive-navbar-nav" />
         <BNavbar.Collapse id="responsive-navbar-nav">
           <Nav className='me-auto' style={{paddingLeft: '16px'}}>
