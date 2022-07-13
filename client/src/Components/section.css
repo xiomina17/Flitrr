@@ -1,0 +1,123 @@
+h1, p {
+    font-family: 'Mulish', sans-serif;
+    z-index: 1;
+}
+
+.landing-sec-inner h1 {
+    color: rgb(236, 60, 60);
+}
+
+.bird-wrap {
+    position: absolute;
+}
+
+#bird-in-sec {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: scaleX(-1);
+}
+
+#arg {
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-image: url('../../public/Assets/background2-flipped.png')
+}
+
+#css {
+    background-size: cover;
+    background-position: center bottom;
+    background-image: url('../../public/Assets/background8.png')
+}
+
+#crm {
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url('../../public/Assets/background2.png')
+}
+
+.landing-sec {
+    background-color: white;
+    padding: 30px 0;
+}
+
+.landing-sec h1 {
+    margin: 0px;
+    font-weight: bolder;
+
+    text-align: left;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+.textblock {
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+    align-items: center;
+
+    justify-content: space-around;
+}
+
+.textblock div {
+    display: flex;
+    align-items: center;
+}
+
+.textblock p {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 2em;
+
+    margin: 0;
+    padding: 20px 20px;
+    text-align: left;
+}
+
+.image-p {
+    max-width: 600px;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+
+    background-position: center left;
+    background-size: cover;
+    margin: 10px;
+}
+
+#image-1 {
+    background-position: center right;
+    background-image: url('../../public/Assets/arg-1.jpg');
+}
+
+#image-2 {
+    background-position: center center;
+    background-image: url('../../public/Assets/arg-2.jpg');
+}
+
+#image-3 {
+    background-position: center center;
+    background-image: url('../../public/Assets/arg-3.jpg');
+}
+
+#image-4 {
+    background-image: url('../../public/Assets/css-1.jpg');
+}
+
+#image-5 {
+    background-image: url('../../public/Assets/css-2.jpg');
+}
+
+#image-6 {
+    background-image: url('../../public/Assets/crm-1.jpg');
+}
+
+#image-7 {
+    background-image: url('../../public/Assets/crm-2.jpg');
+}
