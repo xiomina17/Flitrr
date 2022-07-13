@@ -1,7 +1,8 @@
 import {Button, Container, Nav, Navbar as BNavbar, NavDropdown, Form} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
-import './dashboard.css'
+import './dashboard.css';
+import '/Users/xiomina/Desktop/Flitrr/client/src/Components/Board/board.css';
 import Board from '../Board/Board';
 
 const Main = () => {
@@ -71,7 +72,7 @@ const Main = () => {
 				<Button>Create</Button>
           </Nav>
 
-		<Nav className='navbar-nav2'>
+		<nav className='navbar-nav2'>
 		  <Form className="d-flex">
             <Form.Control
               type="search"
@@ -86,7 +87,7 @@ const Main = () => {
 		  <Icon.GearFill width="20px" height="20px"></Icon.GearFill>
 		  <Icon.Circle></Icon.Circle>
 
-		</Nav>
+		</nav>
 
         </BNavbar.Collapse>
       </Container>

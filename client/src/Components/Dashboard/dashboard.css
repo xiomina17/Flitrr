@@ -25,7 +25,7 @@
 }
 
 .board {
-	flex:5
+	flex:6
 }
 
 .nav-container2{
@@ -45,20 +45,18 @@
 	font-weight: bold;
 	font-size: 30px;
 }
-<<<<<<< HEAD
-.navbar-nav2{
-=======
 
-.dash-nav {
->>>>>>> dc6f2661066e69999d8fc48bd339d62346cc6c03
-	align-items: center;
-	width:400px;
-	justify-content: space-between;
-	margin-top: auto;
-}
 
 .tittle2{
 	font-weight: lighter;
 	font-size: 30px;;
 }
+
+.navbar-nav2{
+	display: flex;
+	width:400px;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
 
