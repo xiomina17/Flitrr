@@ -2,6 +2,7 @@ import {Button, Container, Nav, Navbar as BNavbar, NavDropdown, Form} from 'reac
 import {Link} from 'react-router-dom';
 import * as Icon from 'react-bootstrap-icons';
 import './dashboard.css';
+import '/Users/xiomina/Desktop/Flitrr/client/src/Components/Board/board.css';
 import Board from '../Board/Board';
 
 const Main = () => {
