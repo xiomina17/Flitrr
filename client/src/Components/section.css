@@ -8,6 +8,15 @@
     font-family: 'Mulish', sans-serif;
 }
 
+.section-demo {
+    text-align: center;
+    font-family: 'Mulish', sans-serif;
+}
+
+.section-demo h3 {
+    font-weight: bolder;
+}
+
 p {
     font-weight: normal !important;
 }
@@ -33,7 +42,7 @@ p, h3, h5 {
     font-weight: 800 !important;
 }
 
-.section {
+.section, .section-demo {
     padding: 80px 0px;
 }
 
