@@ -1,6 +1,29 @@
-h1, p {
+* {
+    text-align: left;
     font-family: 'Mulish', sans-serif;
-    z-index: 1;
+}
+
+p {
+    font-weight: normal !important;
+}
+
+h5, h2 {
+    font-weight: 800 !important;
+}
+
+p, h3, h5 {
+    margin-bottom: 10px !important;
+}
+
+#image-1 {
+    width: 300px !important;
+    height: 300px !important;
+
+    margin: 0 auto;
+
+    background-size: cover !important;
+    background-position: center center;
+    background-image: url('../../public/Assets/arg-1.jpg')
 }
 
 .landing-sec-inner h1 {
