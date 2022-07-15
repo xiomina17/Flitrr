@@ -5,7 +5,7 @@ import '../section.css'
 
 const Argument = () => {
     return (
-        <div style={{padding: "70px 0"}}>
+        <div className="section">
             {/*Give the section some breathing space*/}
             <Container>
                 {/*Text and images separated into two columns*/}
@@ -13,10 +13,10 @@ const Argument = () => {
                 {/*align-items-center: center content vertically*/}
                 <Row className="justify-content-center align-items-center">
                     <Col lg="6" style={{width: "450px"}}>
-                        <div id="image-1"></div>
+                        <div className="image" id="image-1"></div>
                     </Col>
                     <Col lg="6" style={{width: "450px"}}>
-                        <div>
+                        <div className="section-content-wrap">
                             <h5>Our Value</h5>
                             <h2>The Argument for Customer Issue Analytics Software</h2>
                             <p>Flitrr provides a one of a kind customer issue analytics software that accomplishes more than the competition.</p>
