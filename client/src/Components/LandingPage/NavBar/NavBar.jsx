@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
 
         <BNavbar collapseOnSelect expand="lg" className='nav-container'>
-            <Container>
+            <Container style={{justifyContent: 'center'}}>
                 <Row>
                     <Col>
 
