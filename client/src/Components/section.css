@@ -13,8 +13,25 @@
     font-family: 'Mulish', sans-serif;
 }
 
+.section-how-does * {
+    text-align: center;
+}
+
 .section-demo h3 {
     font-weight: bolder;
+}
+
+.step-card {
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.step-card * {
+    margin: 10px 0;
+}
+
+.img-wrap {
+    height: 300px;
 }
 
 p {
