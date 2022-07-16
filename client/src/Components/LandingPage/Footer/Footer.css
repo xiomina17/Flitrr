@@ -1,0 +1,55 @@
+footer {
+    background-color: #F8914C;
+    color: white;
+
+    font-size: 17px;
+    text-align: left;
+
+    padding: 70px;
+    padding-bottom: 100px;
+}
+
+#container {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: #fff !important;
+    position: relative;
+}
+
+footer ul a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid #ffffff;
+    transition: 0.4s;
+}
+
+footer ul a:hover:after {
+    width: 100%;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+p {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+ul {
+    display: block;
+    padding: 0px;
+    list-style: none;
+}

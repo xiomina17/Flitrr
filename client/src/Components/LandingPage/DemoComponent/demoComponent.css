@@ -1,0 +1,32 @@
+.demo-wrapper {
+
+    background-color: whitesmoke;
+    height: 100vh;
+    padding: 80px;
+}
+
+.rectangle {
+    
+    height:500px;
+    border-radius: 50px;
+    background:  url("/public/Assets/demo-background5.png") no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+#tittle {
+    color: white;
+    font-weight:bolder;
+    font-size: 90px;
+    margin-top: 100px;
+
+}
+.rec-button{
+
+    background-color: #F8914C !important;
+    padding: 20px !important;
+    border: none !important;
+    margin-top: 20px;
+    
+}
