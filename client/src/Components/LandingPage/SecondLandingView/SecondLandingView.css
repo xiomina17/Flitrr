@@ -1,0 +1,79 @@
+.sec-container {
+    background: url("/public/Assets/background4.png") no-repeat center;
+    background-size: cover;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 35px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.second-card {
+    width: 350px !important;
+    height: 530px;
+    border-radius: 20px !important;
+    padding: 20px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: white !important;
+    transition: 1s;
+    margin-top: 50px;
+}
+.second-card:hover {
+    transform:scale(1.1);
+    z-index:2;
+}
+.s-text {
+    margin-top: 25px;
+}
+
+
+.s2-text {
+    margin-top: 25px;
+}
+.title-text {
+
+    padding-top: 70px;
+    font-weight: bolder;
+    font-size: 60px;
+    color: black;
+}
+
+
+.second-imgs {
+    margin-top: 30px;
+}
+.card-tittle1 {
+    margin-top: 35px !important;
+    color: grey;
+    font-weight: bolder !important;
+    font-size: 18px !important;
+}
+
+.card-tittle2 {
+    
+    color: grey;
+    font-weight: bolder !important;
+    font-size: 18px !important;
+
+}
+
+.card-tittle3 {
+    color: grey;
+    font-weight: bolder !important;
+    font-size: 18px !important;
+
+
+}
+
+.c-text {
+    font-weight: lighter;
+    color: grey;
+}
+
+

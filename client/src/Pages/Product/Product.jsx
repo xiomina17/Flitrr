@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../Components/NavBar/Navbar.css';
-import Navbar from '../../Components/NavBar/NavBar'
-import Footer from '../../Components/Footer/Footer'
+import '../../Components/LandingPage/NavBar/Navbar.css';
+import Navbar from '../../Components/LandingPage/NavBar/NavBar'
+import Footer from '../../Components/LandingPage/Footer/Footer'
 
 import './Product.css'
 
