@@ -1,9 +1,8 @@
 import React from 'react';
-import '../section.css'
+import '../../section.css'
 import './SecondLandingView.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
-import Wrapper from '../Wrapper/Wrapper';
 
 
 const SecondLandingView = () => {
@@ -53,18 +52,18 @@ const SecondLandingView = () => {
     //   <div className="card-wrapper">
 
 
-      
+
     //   <Card className='second-card' style={{ width: '22rem' }}>
     //     <Card.Img variant="top" src="./Assets/createAccount.png" />
     //     <Card.Body >
     //       <Card.Title className='card-tittle3'> 1. Create an account with us</Card.Title>
     //       <Card.Text className='c-text'>
-    //       With a Team onboarding account, you can create your own company structure and 
+    //       With a Team onboarding account, you can create your own company structure and
     //       securely manage your issues from a single dashboard.
     //       </Card.Text>
     //     </Card.Body>
     //   </Card>
-    
+
 
 
     //   <Card  className='second-card' style={{ width: '22rem' }}>

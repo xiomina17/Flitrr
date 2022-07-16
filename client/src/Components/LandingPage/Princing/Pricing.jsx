@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.modules.css';
-import '../section.css'
+import '../../section.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import * as Icon from 'react-bootstrap-icons';
 
@@ -17,7 +17,7 @@ const Pricing = () => {
                             <h2> Full Data Processing</h2>
                             <p className='p-style'>(Self Infrastructure)</p>
                         </div>
-               
+
                         <div className='body-container'>
 
                             <h3 className='text-style'>Contact us for a Quote</h3>
@@ -27,7 +27,7 @@ const Pricing = () => {
                                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Integrations with your favorite apps, I.e Salesforce, Hubspot, Zendesk, Snowflake, and Jira.</p>
                                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Unlimited team and org structure.</p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </Col>
                 <Col sm="12" lg="6">
@@ -36,7 +36,7 @@ const Pricing = () => {
                             <h2> Full Data Processing</h2>
                             <p className='p-style'>(Provided Cloud Infrastructure)</p>
                         </div>
-              
+
                         <div className='body-container'>
                             <h3 className='text-style'>Contact us for a Quote</h3>
                             <div className='body-text'>
@@ -45,7 +45,7 @@ const Pricing = () => {
                                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Integrations with your favorite apps, I.e Salesforce, Hubspot, Zendesk, Snowflake, and Jira.</p>
                                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Unlimited team and org structure.</p>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                 </Col>
             </Row>
@@ -54,7 +54,7 @@ const Pricing = () => {
 
     // <div className='third-container' id="pricing">
     //     <h1 className='tittle'>Pricing and Plans</h1>
-        
+
     //     <div className='pricing-wrapper'>
 
     //         <div className='price-container'>
@@ -62,7 +62,7 @@ const Pricing = () => {
     //             <h2> Full Data Processing</h2>
     //                 <p className='p-style'>(Self Infrastructure)</p>
     //             </div>
-               
+
     //             <div className='body-container'>
 
     //             <h3 className='text-style'>Contact us for a Quote</h3>
@@ -73,7 +73,7 @@ const Pricing = () => {
     //                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Unlimited team and org structure.</p>
     //                 </div>
 
-    //         </div> 
+    //         </div>
 
     //         </div>
 
@@ -83,7 +83,7 @@ const Pricing = () => {
     //                 <h2> Full Data Processing</h2>
     //                 <p className='p-style'>(Provided Cloud Infrastructure)</p>
     //             </div>
-               
+
     //             <div className='body-container'>
 
     //             <h3 className='text-style'>Contact us for a Quote</h3>
@@ -93,7 +93,7 @@ const Pricing = () => {
     //                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Integrations with your favorite apps, I.e Salesforce, Hubspot, Zendesk, Snowflake, and Jira.</p>
     //                 <p><Icon.CheckCircleFill style={{ color: 'orange', size: '50px' }}/> Unlimited team and org structure.</p>
     //                 </div>
-    //         </div> 
+    //         </div>
 
     //         </div>
     //     </div>
