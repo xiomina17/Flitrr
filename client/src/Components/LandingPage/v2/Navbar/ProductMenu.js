@@ -7,6 +7,7 @@ import {
 	StyledLink,
 	Underlined,
 	DropdownButton,
+	CompareLink,
 } from './StyledComponents';
 import Link from './Link';
 
@@ -33,6 +34,32 @@ function ProductMenu(props) {
 			<SidePanel>
 				<DropdownButton>Integrations</DropdownButton>
 				<DropdownButton>Pricing</DropdownButton>
+				<Header>
+					<Underlined>Compare Flitrr vs</Underlined>
+				</Header>
+				<ul style={{ padding: 0, margin: 0 }}>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Zendesk</CompareLink>
+					</li>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Salesforce Service Cloud</CompareLink>
+					</li>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Freshdesk</CompareLink>
+					</li>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Oracle</CompareLink>
+					</li>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Gladly</CompareLink>
+					</li>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Intercom</CompareLink>
+					</li>
+					<li style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+						<CompareLink to='#'>Gorgias</CompareLink>
+					</li>
+				</ul>
 			</SidePanel>
 		</ProductMenuDiv>
 	);

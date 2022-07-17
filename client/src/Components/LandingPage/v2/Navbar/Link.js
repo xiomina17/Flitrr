@@ -14,7 +14,7 @@ function Link({ title, children, to }) {
 		marginBottom: '.9rem',
 	};
 	const linkStyles = {
-		padding: hovered ? '0 20px 0 17px' : '0 20px',
+		padding: hovered ? '0 10px 0 7px' : '0 10px',
 	};
 	return (
 		<ListItem onMouseOver={() => setHovered(true)} onMouseOut={() => setHovered(false)}>

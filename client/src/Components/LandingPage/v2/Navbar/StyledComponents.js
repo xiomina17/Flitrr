@@ -38,7 +38,7 @@ export const ModalContent = styled.div`
 		${(props) => (props.pos ? props.pos.left : 0)}px; /* 15% from the top and centered */
 	box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
-	width: 666px; /* Could be more or less, depending on screen size */
+	max-width: ${(props) => (props.width ? props.width : 666)}px; /* Could be more or less, depending on screen size */
 	position: relative;
 `;
 
@@ -63,6 +63,10 @@ export const ProductMenuDiv = styled.div`
 	display: flex;
 `;
 
+export const IndustriesMenuDiv = styled.div`
+	text-align: left;
+`;
+
 export const SolutionsMenu = styled.div`
 	border-right: 2px solid #aaa;
 	flex: 1 0 50%;
@@ -72,20 +76,20 @@ export const Header = styled.h3`
 	text-transform: uppercase;
 	font-size: 1rem;
 	color: #6e6e6e;
-	padding-top: 20px;
-	padding-left: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
 `;
 
 export const Underlined = styled.span`
 	border-bottom: 1px solid #6e6e6e;
 	display: inline-block;
-	width: calc(100% - 20px);
+	width: calc(100% - 10px);
 `;
 
 export const SidePanel = styled.div`
 	background-color: #f3f3f3;
 	flex: 1 0 50%;
-	padding: 20px;
+	padding: 10px;
 `;
 
 export const StyledLink = styled(Link)`
@@ -99,7 +103,7 @@ export const StyledLink = styled(Link)`
 
 export const ListItem = styled.div`
 	border: none;
-	transition: all 0.1s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	&:hover {
 		border-left: 3px solid orangered;
 	}
@@ -115,5 +119,17 @@ export const DropdownButton = styled.button`
 	&:hover {
 		color: orangered;
 		border: 1px solid orangered;
+	}
+`;
+
+export const CompareLink = styled(Link)`
+	text-decoration: none;
+	color: inherit;
+	padding: 0 10px;
+	margin-bottom: 1rem;
+	display: inline-block;
+
+	&:hover {
+		color: orangered;
 	}
 `;
