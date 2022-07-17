@@ -9,6 +9,7 @@ import FlitrrVCRM from './FlitrrVCRM/FlitrrVCRM';
 import Argument from './Argument/Argument'
 import DemoComponent from './DemoComponent/DemoComponent';
 import Footer from './Footer/Footer';
+import Navbar2 from './v2/Navbar/Navbar';
 
 
 const LandingPage = () => {
@@ -22,6 +23,7 @@ const LandingPage = () => {
   return (
     <div>
       <Navbar/>
+      <Navbar2/>
       <MainLandingView/>
       <SecondLandingView/>
       <Argument/>
