@@ -98,7 +98,22 @@ export const StyledLink = styled(Link)`
 `;
 
 export const ListItem = styled.div`
+	border: none;
+	transition: all 0.1s ease-in-out;
 	&:hover {
 		border-left: 3px solid orangered;
+	}
+`;
+
+export const DropdownButton = styled.button`
+	border-radius: 5px;
+	border: 1px solid #777;
+	padding: 18px 33px;
+	width: 100%;
+	margin: 10px 10px 10px 0;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		color: orangered;
+		border: 1px solid orangered;
 	}
 `;

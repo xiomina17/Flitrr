@@ -1,5 +1,13 @@
 import React from 'react';
-import { ProductMenuDiv, SolutionsMenu, Header, SidePanel, StyledLink, Underlined } from './StyledComponents';
+import {
+	ProductMenuDiv,
+	SolutionsMenu,
+	Header,
+	SidePanel,
+	StyledLink,
+	Underlined,
+	DropdownButton,
+} from './StyledComponents';
 import Link from './Link';
 
 function ProductMenu(props) {
@@ -22,7 +30,10 @@ function ProductMenu(props) {
 					Minimize costs with a new CRM for customer service
 				</Link>
 			</SolutionsMenu>
-			<SidePanel>Hi</SidePanel>
+			<SidePanel>
+				<DropdownButton>Integrations</DropdownButton>
+				<DropdownButton>Pricing</DropdownButton>
+			</SidePanel>
 		</ProductMenuDiv>
 	);
 }
